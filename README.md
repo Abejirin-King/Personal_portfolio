@@ -25,7 +25,8 @@ Features
   * Responsive navigation bar
   * Contact form with validation
   * Modals for project previews
-  * Smooth scroll 
+  * Smooth scroll
+  * Toggle theme button (Top left of the webpage)
 * Cross-Browser Compatibility: Tested on Chrome, Firefox, Safari, and Edge.
 * Semantic HTML & Well-Commented Code: Clean, readable, and accessible markup.
 
