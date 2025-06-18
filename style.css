@@ -3,6 +3,21 @@
   --accent-color: #264653;
   --text-color: #333;
   --bg-color: #f4f4f4;
+  --card-bg: white;
+  --input-border: #ccc;
+  --button-hover: #21867a;
+  --link-color: white;
+}
+
+.dark-mode {
+  --main-color: #2a9d8f;
+  --accent-color: #1d3557;
+  --text-color: #f1f1f1;
+  --bg-color: #121212;
+  --card-bg: #1e1e1e;
+  --input-border: #444;
+  --button-hover: #1b6f63;
+  --link-color: #a8dadc;
 }
 
 * {
@@ -40,7 +55,7 @@ header {
 }
 
 .nav-links a {
-  color: white;
+  color: var(--link-color);
   text-decoration: none;
 }
 
@@ -65,14 +80,14 @@ header {
 }
 
 .skills-list li {
-  background: white;
+  background: var(--card-bg);
   padding: 0.5rem 1rem;
   border: 1px solid var(--accent-color);
   border-radius: 5px;
 }
 
 .project {
-  background: white;
+  background: var(--card-bg);
   padding: 1rem;
   margin-bottom: 1rem;
   border-left: 5px solid var(--main-color);
@@ -87,8 +102,10 @@ form {
 form input,
 form textarea {
   padding: 0.8rem;
-  border: 1px solid #ccc;
+  border: 1px solid var(--input-border);
   border-radius: 4px;
+  background: var(--card-bg);
+  color: var(--text-color);
 }
 
 form button {
@@ -100,7 +117,7 @@ form button {
 }
 
 form button:hover {
-  background: #21867a;
+  background: var(--button-hover);
 }
 
 footer {
